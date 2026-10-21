@@ -1,0 +1,12 @@
+name: demarrer projet
+on : [push]
+
+  jobs:
+    demarrer-projet:
+      runs-on: ubuntu-latest
+      steps:
+        run : |
+          npm install
+          npm run build
+          npm start
+          
