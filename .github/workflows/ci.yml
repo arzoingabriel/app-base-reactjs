@@ -5,8 +5,8 @@ on : [push]
     demarrer-projet:
       runs-on: ubuntu-latest
       steps:
-        run : |
-          npm install
-          npm run build
-          npm start
-          
+        - name: démarrage du projet
+          run : |
+            npm install
+            npm run build
+            npm start
